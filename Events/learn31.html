@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning setInterval</title>
+</head>
+<body>
+    <h1>Press Start to Print Name <br>
+        Press Stop to end </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let printN
+    document.querySelector('#start').addEventListener('click',function(){
+        printN = setInterval(printName,1000)
+    })
+
+    const printName = function(){
+        console.log("Akshat",Math.random());
+    }   
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(printN);
+    })
+    
+</script>
+</html>

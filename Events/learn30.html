@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Async JS</title>
+</head>
+<body>
+    <h1>Learning Javascript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout
+
+    // Task -> to change the heading to Web Dev after 2 sec
+    const changehead = function(){
+        document.querySelector('h1').innerHTML='Web Development';
+    }
+
+    const changeT =  setTimeout(changehead,2000)
+
+    // If we want to stop the setTimeout -> clearTimeout
+    
+    // Task ->  Using the stop button if clicked before text changes setTimeout won't work
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeT)
+        console.log("Button Clicked");
+    })
+</script>
+</html>

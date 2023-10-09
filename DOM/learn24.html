@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-color{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-color">
+    <div>
+        <h1 id="title">Learning Javascript</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laudantium nemo molestiae rerum similique vel, reprehenderit
+     exercitationem est, aliquid corrupti veniam incidunt, optio aut esse illum repellat odit aliquam nulla?</p>
+
+    <h1>LoLorem ipsum dolor sit</h1>
+    <h2>Lorem ipsum dolor sit aks nsns nsnsnsn</h2>
+    <h1>Lorem ipsum dolor</h1>
+    </div>
+</body>
+</html>
+
+<!--
+    selecting an element : 
+    document.getElementById('title')  -> element with id title gets selected
+
+    document.getElementById('title').getAttribute('class') or 'id'
+    document.getElementById('title').setAttribute('class','test')  -> class name is set to test
+
+    
+    // Styling using DOM 
+        const title = document.getElementById('title')
+        title.style.backgroundColor = "green"
+
+    <h1 id="title">Learning Javascript <span style = "display : none;"> test text</span> </h1>
+
+    title.innerText ->  Learning Javascript
+    title.textContent -> Learning Javascript test text
+    title.innerHTML -> Learning Javascript <span style = "display : none;"> test text</span>
+
+    
+    // Using a query selector
+        document.querySelector('h1') -> returns first h1
+        document.querySelectorAll('h1')  -> returns a node list conatining all h1
+
+        // slecting an id
+            document.querySelector('#title')
+        
+        // selecting a class
+          document.querySelector('.heading')
+        
+        // selecting an input element
+            document.querySelector('input[type="password"]')
+-->
