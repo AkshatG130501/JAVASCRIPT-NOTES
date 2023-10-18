@@ -1,7 +1,8 @@
 # JAVASCRIPT-NOTES
 This repository contains a comprehensive collection of notes and resources related to JavaScript.
 
-# CONTENT 
+# CONTENT
+
   1. 01_basics
      
        1.1 Let vs const vs var
